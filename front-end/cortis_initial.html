@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A webpage for true coers to get closer to the group.">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CORTIS - COLOR OUTSIDE THE LINES</title>
+</head>
+<body>
+
+    <!-- ===== CORTINA + FAIXA DE NAVEGAÇÃO ===== -->
+    <section id="topo_area">
+        <div class="cortina_div">
+            <img src="img/cortis_frame_one.webp" alt="Frame promocional do EP Color Outside the Lines" id="cortina_image">
+            <h1 id="first_title">COLOR OUTSIDE THE<br>LINES</h1>
+            <button id="botao_start">Start Your Joyride
+                <span class="arrow-down"><img src="img/arrow_topo.svg" alt=""></span>
+            </button>
+        </div>
+
+        <div class="conteudo_cortina">
+            <a href="cortis_initial.html" class="cortis_logo"><img src="img/cortis_icon.svg" alt=""></a>
+            <div class="os_quatro_botoes_topo">
+                <a href="concepts.html" class="botoes_topo_um">CONCEPTS</a>
+                <a href="members.html" class="botoes_topo_dois">MEMBERS</a>
+                <a href="fashion.html" class="botoes_topo_tres">FASHION</a>
+                <a href="tickets.html" class="botoes_topo_quatro">TICKETS</a>
+            </div>
+            <div class="botoes_juntos_do_lado">
+                <div class="search_bar">
+                    <button class="search_button" id="search_toggle" type="button"
+                            aria-label="Pesquisar no site" aria-expanded="false" aria-controls="search_panel">
+                        <img src="img/searc_icon_fixed.svg" alt="">
+                    </button>
+
+                    <div class="search_panel" id="search_panel" hidden>
+                        <form id="search_form" role="search">
+                            <input type="search" id="search_input" placeholder="Search CORTIS..."
+                                   autocomplete="off" aria-label="Pesquisar no site">
+                        </form>
+                        <ul id="search_results"></ul>
+                    </div>
+                </div>
+                <a href="user_area.html" class="botoes_lateral_um"><img src="img/user_icon.svg" alt=""></a>
+                <a href="user_cart.html" class="botoes_lateral_dois"><img src="img/cart_icon.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CAPAS DOS EPs ===== -->
+    <section id="singles_area">
+        <div id="eps_images">
+            <div class="slide_ep ativo">
+                <img src="img/cortis_color_cover.webp" alt="Capa do EP Color Outside the Lines">
+            </div>
+            <div class="slide_ep">
+                <img src="img/greengreen_cover.webp" alt="Capa do EP Green Green">
+            </div>
+        </div>
+        <button class="slide_left"><img src="img/arrow_left_white.svg" alt=""></button>
+        <button class="slide_right"><img src="img/arrow_right_white.svg" alt=""></button>
+        <button class="dot_one"><img src="img/dot_green.svg" alt=""></button>
+        <button class="dot_two"><img src="img/dot_grey.svg" alt=""></button>
+    </section>
+
+    <!-- ===== SEÇÃO VERDE + RODAPÉ (compartilham o fundo metálico) ===== -->
+    <div id="fundo_conjunto">
+
+        <!-- Fundo metálico: flor + correntes (ficam atrás do filtro verde e do rodapé) -->
+        <div id="icones_fundo" aria-hidden="true">
+            <img class="flor_first_page" src="img/flor_first_page.svg" alt="">
+            <img class="chains_left" src="img/chains_left.svg" alt="">
+            <img class="chains_right" src="img/chains_right.svg" alt="">
+        </div>
+
+        <section id="light_green_area">
+
+            <!-- Redes sociais + MORE -->
+            <div class="light_green_topo">
+                <div class="grupo_redes">
+                    <button class="rede_btn youtube_icon" aria-label="YouTube"><img src="img/youtube_icon.svg" alt=""></button>
+                    <button class="rede_btn twitter_icon" aria-label="X / Twitter"><img src="img/twitter_icon.svg" alt=""></button>
+                    <button class="rede_btn instagram_icon" aria-label="Instagram"><img src="img/insta_icon.svg" alt=""></button>
+                </div>
+                <div class="grupo_redes">
+                    <button class="rede_btn tiktok_icon" aria-label="TikTok"><img src="img/tiktok_icon.svg" alt=""></button>
+                    <button class="rede_btn spotify_icon" aria-label="Spotify"><img src="img/spotify_icon.svg" alt=""></button>
+                    <button class="btn_caixa more">MORE</button>
+                </div>
+            </div>
+
+            <!-- WEVERSE UPDATES -->
+            <div class="weverse_linha">
+                <button class="btn_caixa weverse_button">WEVERSE UPDATES</button>
+            </div>
+
+            <!-- Fotos dos membros -->
+            <div id="weverse_pics">
+                <button class="green_arrow_left" aria-label="Anterior"><img src="img/arrow_left_green.svg" alt=""></button>
+
+                <div class="weverse_painel">
+                    <div class="weverse_trilho" id="weverse_trilho">
+                        <img src="img/juhoon_pic.webp" alt="Juhoon's pic" draggable="false">
+                        <img src="img/seonghyeon_pic.webp" alt="Seon's pic" draggable="false">
+                        <img src="img/keonho_pic.webp" alt="Keonho's pic" draggable="false">
+                        <img src="img/james_pic.webp" alt="James' pic" draggable="false">
+                        <img src="img/james_glasses.jpg" alt="James w glasses" draggable="false">
+                        <!-- adicione mais <img> aqui -->
+                    </div>
+                    <div class="weverse_barra">
+                        <div class="weverse_thumb" id="weverse_thumb"></div>
+                    </div>
+                </div>
+
+                <button class="green_arrow_right" aria-label="Próxima"><img src="img/arrow_right_green.svg" alt=""></button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer_icons">
+                <a href="https://hybecorp.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="hybe_page"
+                   aria-label="Access Hybe Corporation website">
+                    <img src="img/hybe_icon.svg" alt="">
+                </a>
+                <a href="https://www.ibighit.com/ko/main/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="bighit_page"
+                   aria-label="Access Bighit Industries website">
+                    <img src="img/bighit_icon.svg" alt="">
+                </a>
+                <div class="footer_links">
+                    <a href="terms.html" class="terms_link" aria-label="Access terms and conditions.">
+                        <h4 class="footer_button_one">Terms</h4>
+                    </a>
+                    <a href="privacy.html" class="privacy_link" aria-label="Access privacy information.">
+                        <h4 class="footer_button_two">Privacy</h4>
+                    </a>
+                    <a href="support.html" class="support_link" aria-label="Access help and support information.">
+                        <h4 class="footer_button_three">Help and Support</h4>
+                    </a>
+                </div>
+                <p>&copy; 2026 CORTIS. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
