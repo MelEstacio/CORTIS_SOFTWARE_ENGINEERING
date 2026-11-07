@@ -63,32 +63,32 @@ Promotions
 
 The database structure is continuously refined as new business requirements and edge cases are identified.
 
-📊 Data & Python
+🐍 Python & Backend
 
-As the project develops, Python will be incorporated into the system to explore data manipulation and analysis based on the information stored in the relational database.
+As the project develops, Python will be used as a core technology for building the backend and implementing the application's business logic.
 
 Planned applications include:
 
-Extracting data from PostgreSQL
-Data manipulation and transformation
-Exploratory data analysis
-Generating insights from fan and commerce data
-Working with structured datasets
-
-This stage will connect the database engineering side of the project with my current studies in Data Analysis and Python.
+- Building RESTful API endpoints
+- Implementing business rules and application logic
+- Handling requests and responses between the frontend and backend
+- Managing user authentication and system operations
+- Connecting and interacting with the PostgreSQL database
+- Processing features related to products, tickets, orders, payments, and user interactions
 
 💻 Technologies
-Current
-PostgreSQL
-SQL
-Python — data analysis development
-Excel
-Draw.io — database modeling
-Previous / Original Implementation
-HTML5
-CSS3
-JavaScript
-PHP
+
+### Current
+- PostgreSQL
+- SQL
+- Python - backend development and business logic
+
+### Previous / Original Implementation
+- HTML5
+- CSS3
+- JavaScript
+- Draw.io - database modeling
+- Figma - Design ideation
 
 The original project began as a web-focused implementation and is currently being restructured as a broader software engineering project.
 
@@ -96,6 +96,15 @@ The original project began as a web-focused implementation and is currently bein
 
 In active development.
 
-The database architecture is currently being implemented and refined in PostgreSQL. Application-layer development and Python-based data analysis will be incorporated as the project progresses.
+The backend will be designed around a RESTful API responsible for handling requests and responses between the frontend, application logic, and database. 
+Its planned responsibilities include managing users, products, tickets, orders, payments, and user interactions, 
+while applying the business rules that define how these different parts of the system work together.
 
-This project is being developed as part of my Computer Science studies and serves as a practical environment for applying concepts in software engineering, databases, programming, and data analysis.
+As the system evolves, the project will also serve as an opportunity to explore the architecture behind applications that manage large volumes of information and transactions.
+The goal is to better understand how a system designed to serve a large user base can be structured, maintained, 
+and expanded—from database organization and API communication to the implementation of reliable business rules and system operations.
+
+This project is being developed as part of my Computer Science studies 
+and serves as a practical environment for applying concepts in software engineering, databases, programming, 
+and backend development. Through CORTIS, I aim to explore how the systems behind large-scale digital platforms are designed and maintained, 
+and how different technologies work together to support thousands or potentially millions of users and their interactions.
