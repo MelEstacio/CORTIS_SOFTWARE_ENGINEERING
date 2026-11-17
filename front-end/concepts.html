@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A webpage for true coers to get closer to the group.">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="concepts.css">
+    <title>CORTIS - CONCEPTS</title>
+</head>
+<body class="concepts_page">
+
+    <!-- ===== FAIXA DE NAVEGAÇÃO (igual à home, sem cortina) ===== -->
+    <section id="topo_area">
+        <div class="conteudo_cortina">
+            <a href="cortis_initial.html" class="cortis_logo"><img src="img/cortis_icon.svg" alt=""></a>
+            <div class="os_quatro_botoes_topo">
+                <a href="concepts.html" class="botoes_topo_um">CONCEPTS</a>
+                <a href="members.html" class="botoes_topo_dois">MEMBERS</a>
+                <a href="fashion.html" class="botoes_topo_tres">FASHION</a>
+                <a href="tickets.html" class="botoes_topo_quatro">TICKETS</a>
+            </div>
+            <div class="botoes_juntos_do_lado">
+                <div class="search_bar">
+                    <button class="search_button" id="search_toggle" type="button"
+                            aria-label="Pesquisar no site" aria-expanded="false" aria-controls="search_panel">
+                        <img src="img/searc_icon_fixed.svg" alt="">
+                    </button>
+
+                    <div class="search_panel" id="search_panel" hidden>
+                        <form id="search_form" role="search">
+                            <input type="search" id="search_input" placeholder="Search CORTIS..."
+                                   autocomplete="off" aria-label="Pesquisar no site">
+                        </form>
+                        <ul id="search_results"></ul>
+                    </div>
+                </div>
+                <a href="user_area.html" class="botoes_lateral_um"><img src="img/user_icon.svg" alt=""></a>
+                <a href="user_cart.html" class="botoes_lateral_dois"><img src="img/cart_icon.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CORPO: CONCEPTS ===== -->
+    <main id="concepts_area">
+
+        <div class="concepts_grid">
+            <section class="concept_col">
+                <h2 class="concept_title">Color outside the lines</h2>
+                <img class="concept_cover1" src="img/concepts1.jpg" alt="CORTIS - Color Outside the Lines">
+
+                <div class="concept_tabs" role="tablist">
+                    <button type="button" role="tab" aria-selected="true" data-target="col_about">About</button>
+                    <button type="button" role="tab" aria-selected="false" data-target="col_tracks">Tracks</button>
+                </div>
+                <div class="concept_panel" id="col_about">Color outside the lines is …</div>
+                <div class="concept_panel" id="col_tracks" hidden>
+                    <ol>
+                        <li>Track 1</li>
+                        <li>Track 2</li>
+                        <li>Track 3</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="concept_col">
+                <h2 class="concept_title">GREENGREEN</h2>
+                <img class="concept_cover2" src="img/concepts2.jpg" alt="CORTIS - GREENGREEN">
+
+                <div class="concept_tabs" role="tablist">
+                    <button type="button" role="tab" aria-selected="true" data-target="gg_about">About</button>
+                    <button type="button" role="tab" aria-selected="false" data-target="gg_tracks">Tracks</button>
+                </div>
+                <div class="concept_panel" id="gg_about">GREENGREEN features a …</div>
+                <div class="concept_panel" id="gg_tracks" hidden>
+                    <ol>
+                        <li>Track 1</li>
+                        <li>Track 2</li>
+                        <li>Track 3</li>
+                    </ol>
+                </div>
+            </section>
+        </div>
+
+        <div class="concepts_grid videos_grid">
+            <section class="concept_col">
+                <h2 class="concept_title">Music Videos</h2>
+                <!-- Para adicionar mais vídeos, duplique o bloco <article class="video_card"> -->
+                <article class="video_card">
+                    <div class="video_frame">
+                        <!-- troque ID_DO_VIDEO (youtube.com/watch?v=ID_DO_VIDEO) -->
+                        <iframe src="https://www.youtube-nocookie.com/embed/ID_DO_VIDEO"
+                                title="CORTIS 'Blue Lips' Official MV" loading="lazy"
+                                allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>CORTIS (코르티스) 'Blue Lips' Official MV</h3>
+                    <p>HYBE LABELS e CORTIS • 4,2 M de visualizações • há 3 semanas</p>
+                </article>
+            </section>
+
+            <section class="concept_col">
+                <h2 class="concept_title">Dance Practices</h2>
+                <article class="video_card">
+                    <div class="video_frame">
+                        <iframe src="https://www.youtube-nocookie.com/embed/ID_DO_VIDEO"
+                                title="CORTIS 'ACAI' Dance Practice (Fix ver.)" loading="lazy"
+                                allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>CORTIS (코르티스) 'ACAI' Dance Practice (Fix ver.)</h3>
+                    <p>3,3 M de visualizações • há 1 mês</p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <!-- ===== RODAPÉ (igual à home, com o fundo metálico) ===== -->
+    <div id="fundo_conjunto">
+        <div id="icones_fundo" aria-hidden="true">
+            <img class="flor_first_page" src="img/flor_first_page.svg" alt="">
+            <img class="chains_left" src="img/chains_left.svg" alt="">
+            <img class="chains_right" src="img/chains_right.svg" alt="">
+        </div>
+
+        <footer>
+            <div class="footer_icons">
+                <a href="https://hybecorp.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="hybe_page"
+                   aria-label="Access Hybe Corporation website">
+                    <img src="img/hybe_icon.svg" alt="">
+                </a>
+                <a href="https://www.ibighit.com/ko/main/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="bighit_page"
+                   aria-label="Access Bighit Industries website">
+                    <img src="img/bighit_icon.svg" alt="">
+                </a>
+                <div class="footer_links">
+                    <a href="terms.html" class="terms_link" aria-label="Access terms and conditions.">
+                        <h4 class="footer_button_one">Terms</h4>
+                    </a>
+                    <a href="privacy.html" class="privacy_link" aria-label="Access privacy information.">
+                        <h4 class="footer_button_two">Privacy</h4>
+                    </a>
+                    <a href="support.html" class="support_link" aria-label="Access help and support information.">
+                        <h4 class="footer_button_three">Help and Support</h4>
+                    </a>
+                </div>
+                <p>&copy; 2026 CORTIS. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Abas About / Tracks
+        document.querySelectorAll('.concept_tabs').forEach(function (tabs) {
+            tabs.addEventListener('click', function (e) {
+                var btn = e.target.closest('button');
+                if (!btn) return;
+                tabs.querySelectorAll('button').forEach(function (b) {
+                    b.setAttribute('aria-selected', b === btn);
+                    document.getElementById(b.dataset.target).hidden = (b !== btn);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
