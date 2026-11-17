@@ -26,4 +26,9 @@ dependencies {
 
     testImplementation(kotlin("test"))
     testImplementation(ktorLibs.server.testHost)
+
+    implementation("org.jetbrains.exposed:exposed-core:1.6.1")
+    implementation("org.jetbrains.exposed:exposed-jdbc:1.6.1")
+    implementation("org.postgresql:postgresql:42.7.7")
+    implementation("com.zaxxer:HikariCP:7.0.2")
 }
