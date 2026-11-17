@@ -1,2 +1,7 @@
 .env
 uteis/
+build/
+.gradle/
+.idea/
+.kotlin/
+*.class
