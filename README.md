@@ -1,79 +1,45 @@
-# CORTIS — Fanbase & Artist Platform
-
-A software engineering project designed to explore the development of a digital platform that connects fans, artists, content, events, and commerce within a single ecosystem.
-
-CORTIS began as a web development project inspired by the digital presence of K-pop groups and evolved into a broader software engineering project focused on system design, relational databases, backend development, and data organization.
-
-The project is currently being redesigned around a structured PostgreSQL database and a set of business rules intended to represent a realistic fanbase platform.
-
-## Project Purpose
-
-The goal of CORTIS is to model and eventually implement a platform where fans can interact with artists and their content while accessing features such as:
-
-- Artist and group information
-- Fan accounts
-- Events and tickets
-- Products and orders
-- Loyalty and reward levels
-- Promotional campaigns
-- Artist-related releases and activities
-
-Rather than focusing only on the visual interface, the project is being developed with particular attention to how information is structured, related, validated, and processed within the system.
-
-## System & Database Design
-
-The current development phase focuses on the relational database architecture using PostgreSQL.
-
-The database is being designed through the progression of:
-
-**Conceptual Model → Logical Model → Physical Model**
-
-The schema incorporates concepts such as:
-
-- Primary and foreign keys
-- Supertype/subtype modeling
-- Relationship and cardinality analysis
-- Database normalization
-- Named constraints
-- NOT NULL and CHECK constraints
-- Identity columns
-- Business rules and data integrity
-- Many-to-many relationships through associative tables
-
-The model currently includes entities related to:
-
-```text
-Artists
-├── Groups
-└── Members
-
-Debuts
-
-Fans
-└── Loyalty Levels
-
-Products
-
-Orders
-└── Order Items
-
-Events
-└── Tickets
-
-Promotions
-```
-
-The database structure is continuously refined as new business requirements and edge cases are identified.
-
 ## Kotlin & Backend Development
 
-As the project develops, Kotlin will be used as the primary programming language for backend development, with Ktor serving as the framework for building the application's server-side architecture.
+Kotlin is the primary programming language for backend development, with Ktor serving as the framework for building the application's server-side architecture.
 
-The backend will follow a RESTful API architecture, providing communication between the frontend, application logic, and PostgreSQL database.
+The backend follows a RESTful API architecture, responsible for handling communication between the frontend, application logic, and PostgreSQL database.
 
-Planned applications include:
+The project uses the following libraries and technologies to structure backend operations and database communication:
+
+- **Ktor** — Building the HTTP server, routing, and RESTful API endpoints.
+- **Exposed** — Kotlin SQL framework used for database interaction, table definitions, and query management.
+- **HikariCP** — JDBC connection pooling for efficient and reliable database connection management.
+- **PostgreSQL** — Relational database management and data persistence.
+
+Planned backend responsibilities include:
 
 - Building RESTful API endpoints using Ktor
 - Implementing business rules and application logic with Kotlin
 - Handling HTTP requests and responses
 - Managing user authentication and authorization
+- Managing database operations through Exposed
+- Configuring and managing database connection pools with HikariCP
+- Implementing data validation and error handling
+- Processing features related to products, tickets, orders, payments, and user interactions
+- Structuring backend components to support maintainability, modularity, and future scalability
+
+The intention is to develop a modular backend architecture in which different responsibilities are organized into separate components, making the system easier to maintain, test, and expand.
+
+## Technologies
+
+### Current
+
+- **Kotlin** — Backend development and business logic
+- **Ktor** — HTTP server and RESTful API development
+- **Exposed** — SQL framework and database interaction
+- **HikariCP** — JDBC connection pooling
+- **PostgreSQL** — Relational database management
+- **SQL** — Database modeling, queries, and data manipulation
+
+### Previous / Original Implementation
+
+- HTML5
+- CSS3
+- JavaScript
+- Draw.io — Database modeling
+- Figma — Design ideation
